@@ -1,5 +1,6 @@
 import logging
 import sys
+from turtle import st
 from typing import List
 
 from core.logging import InterceptHandler
@@ -15,6 +16,8 @@ DEBUG: bool = config("DEBUG", cast=bool, default=False)
 MAX_CONNECTIONS_COUNT: int = config("MAX_CONNECTIONS_COUNT", cast=int, default=10)
 MIN_CONNECTIONS_COUNT: int = config("MIN_CONNECTIONS_COUNT", cast=int, default=10)
 SECRET_KEY: Secret = config("SECRET_KEY", cast=Secret, default="")
+TOKEN = config("TOKEN", cast=str, default="")
+CHAT_ID = config("CHAT_ID", cast=str, default="")
 
 PROJECT_NAME: str = config("PROJECT_NAME", default="eye_close_open_detection_api")
 
@@ -26,4 +29,4 @@ logging.basicConfig(
 logger.configure(handlers=[{"sink": sys.stderr, "level": LOGGING_LEVEL}])
 
 MODEL_PATH = config("MODEL_PATH", default="./ml/model/")
-MODEL_NAME = config("MODEL_NAME", default="model.pkl")
+MODEL_NAME = config("MODEL_NAME", default="model.dat")

@@ -1,5 +1,4 @@
 from pydantic import BaseModel
-from typing import Optional
 
 
 class MachineLearningResponse(BaseModel):
@@ -9,6 +8,6 @@ class MachineLearningResponse(BaseModel):
 class HealthResponse(BaseModel):
     status: bool
 
-class Prediction(BaseModel):
+class Detection(BaseModel):
     status: bool
     

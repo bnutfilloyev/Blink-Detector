@@ -38,3 +38,10 @@ class MachineLearningModelHandlerScore(object):
             logger.error(message)
             raise ModelLoadException(message)
         return model
+
+# class OpenCloseEyeDetectionModelHandler(object):
+#     model = None
+
+#     @classmethod
+#     def predict(cls, input, load_wrapper=None, method="predict"):
+#         pass
