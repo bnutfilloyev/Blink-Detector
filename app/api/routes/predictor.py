@@ -5,7 +5,6 @@ import imutils
 import numpy as np
 
 import joblib
-from regex import F
 from core.config import TOKEN, CHAT_ID
 from core.errors import PredictException
 from fastapi import APIRouter, File, HTTPException, UploadFile
