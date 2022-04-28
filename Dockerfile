@@ -12,7 +12,7 @@ RUN apt-get update -y && \
     apt-get install ffmpeg libsm6 libxext6  -y
 
 RUN pip install --upgrade pip && \
-    pip install cmake opencv-python scipy imutils dlib aiogram && \
+    pip install cmake opencv-python scipy imutils dlib aiogram attrs && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --no-dev
