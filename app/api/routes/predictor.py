@@ -51,7 +51,7 @@ async def predict(data_input: Any = None):
 
 
 # get base64 image
-@router.get("/detect", response_model=Detection ,name="image:get-data")
+@router.post("/detect", response_model=Detection ,name="image:get-data")
 async def image(file: UploadFile = File(...)):
     try:
         contents = await file.read()
