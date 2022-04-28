@@ -12,6 +12,10 @@ pydantic = "^1.3"
 requests = "^2.22.0"
 loguru = "^0.4.0"
 joblib = "^0.15.1"
+aiogram = "^2.20"
+cmake = "^3.22.4"
+dlib = "^19.23.1"
+imutils = "^0.5.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
