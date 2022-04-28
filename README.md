@@ -24,6 +24,7 @@ To update your machine learning model, add your `load` and `method` [change here
 ```sh
 python -m venv venv
 source venv/bin/activate
+sudo apt install cmake
 make install
 ```
 

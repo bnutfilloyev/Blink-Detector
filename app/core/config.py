@@ -1,7 +1,5 @@
 import logging
 import sys
-from turtle import st
-from typing import List
 
 from core.logging import InterceptHandler
 from loguru import logger
