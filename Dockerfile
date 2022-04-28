@@ -6,12 +6,16 @@ EXPOSE 8080
 WORKDIR /app
 
 COPY poetry.lock pyproject.toml ./
+
+RUN apt-get update -y && apt-get install build-essential libssl-dev cmake -y
+
 RUN pip install --upgrade pip && \
+    pip install cmake opencv-python scipy imutils dlib && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --no-dev
 
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 
 COPY . ./
 ENV PYTHONPATH app
