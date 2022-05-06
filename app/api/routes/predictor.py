@@ -1,8 +1,5 @@
-from cgi import print_form
 import cv2
-import imutils
 import numpy as np
-from regex import F
 from services.eye_detector import eye_blink_detection
 
 from core.config import TOKEN, CHAT_ID
@@ -10,7 +7,7 @@ from fastapi import APIRouter, File, HTTPException, UploadFile
 from models.prediction import Detection
 from services.predict import MachineLearningModelHandlerScore as model
 
-from services import blink_detection
+# from services import blink_detection
 from aiogram import Bot
 
 
