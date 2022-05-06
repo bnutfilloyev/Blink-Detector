@@ -3,13 +3,8 @@ from core.config import MODEL_NAME, MODEL_PATH
 from scipy.spatial import distance as dist
 from imutils.video import VideoStream
 from imutils import face_utils
-import numpy as np
-import imutils
-import time
 import dlib
 import cv2
-import datetime
-from time import sleep
 
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(MODEL_PATH + MODEL_NAME)

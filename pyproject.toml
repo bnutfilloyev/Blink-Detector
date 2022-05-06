@@ -17,6 +17,7 @@ cmake = "^3.22.4"
 dlib = "^19.23.1"
 imutils = "^0.5.4"
 python-multipart = "^0.0.5"
+keras = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
