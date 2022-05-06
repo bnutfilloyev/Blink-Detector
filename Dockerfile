@@ -13,7 +13,7 @@ RUN apt-get update -y && \
 
 RUN pip install --upgrade pip && \
     pip install opencv-python scipy imutils attrs && \
-    pip install --upgrade tensorflow && \
+    pip install --upgrade tensorflow-gpu && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --no-dev
