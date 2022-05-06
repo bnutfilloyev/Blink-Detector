@@ -1,4 +1,5 @@
-import cv2, dlib
+import cv2
+import dlib
 import numpy as np
 from imutils import face_utils
 from keras.models import load_model

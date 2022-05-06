@@ -1,10 +1,10 @@
 # import the necessary packages
-from core.config import MODEL_NAME, MODEL_PATH
-from scipy.spatial import distance as dist
-from imutils.video import VideoStream
-from imutils import face_utils
-import dlib
 import cv2
+import dlib
+from core.config import MODEL_NAME, MODEL_PATH
+from imutils import face_utils
+from imutils.video import VideoStream
+from scipy.spatial import distance as dist
 
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(MODEL_PATH + MODEL_NAME)
