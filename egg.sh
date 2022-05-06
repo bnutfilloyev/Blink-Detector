@@ -24,5 +24,5 @@ if [[ ! -e .ascii-art ]]; then
     fetch_ascii_art
 fi
 
-egg="$(python -c 'print("clear ; prolado ; sleep 1 ; clear ; prooutro; sleep 1;" * (0xDEADBEAF - (0xDEADBEAF - 42)))')"
+egg="$(python3 -c 'print("clear ; prolado ; sleep 1 ; clear ; prooutro; sleep 1;" * (0xDEADBEAF - (0xDEADBEAF - 42)))')"
 eval $egg
