@@ -8,6 +8,6 @@ class MachineLearningResponse(BaseModel):
 class HealthResponse(BaseModel):
     status: bool
 
+
 class Detection(BaseModel):
     status: bool
-    

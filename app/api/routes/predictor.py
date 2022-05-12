@@ -53,10 +53,12 @@ async def image(file: UploadFile = File(...)):
 
         result, pred_l, pred_r = eye_blink_detection(frame)
 
-        await bot.send_photo(chat_id=CHAT_ID,
-                             photo=contents,
-                             caption=f"<b>result</b>: <code>{result}, </code>\n\n<b>Left: </b> <code>{pred_l[0][0]}, </code>\n<b>Right: </b> <code>{pred_r[0][0]}</code>",
-                             parse_mode="HTML")
+        await bot.send_photo(
+            chat_id=CHAT_ID,
+            photo=contents,
+            caption=f"<b>result</b>: <code>{result}, </code>\n\n<b>Left: </b> <code>{pred_l[0][0]}, </code>\n<b>Right: </b> <code>{pred_r[0][0]}</code>",
+            parse_mode="HTML",
+        )
 
         if result is not None:
             if result == "Blink":

@@ -39,6 +39,7 @@ class MachineLearningModelHandlerScore(object):
             raise ModelLoadException(message)
         return model
 
+
 # class OpenCloseEyeDetectionModelHandler(object):
 #     model = None
 
